@@ -1,0 +1,40 @@
+F:\GPRO_2018\DLL\GPRO.Core\bin\Debug\GPRO.Core.dll
+F:\GPRO_2018\DLL\GPRO.Core\bin\Debug\GPRO.Core.pdb
+F:\GPRO_2018\DLL\GPRO.Core\bin\Debug\Newtonsoft.Json.dll
+F:\GPRO_2018\DLL\GPRO.Core\obj\Debug\GPRO.Core.dll
+F:\GPRO_2018\DLL\GPRO.Core\obj\Debug\GPRO.Core.pdb
+F:\GPRO_2018\DLL\GPRO.Core\bin\Debug\SystemGPRO.Serial.dll
+F:\GPRO_2018\DLL\GPRO.Core\obj\Debug\GPRO.Core.csprojResolveAssemblyReference.cache
+E:\GPRO_2018\DLL\GPRO.Core\bin\Debug\GPRO.Core.dll
+E:\GPRO_2018\DLL\GPRO.Core\bin\Debug\GPRO.Core.pdb
+E:\GPRO_2018\DLL\GPRO.Core\bin\Debug\System.Net.Http.dll
+E:\GPRO_2018\DLL\GPRO.Core\bin\Debug\System.Net.Http.Formatting.dll
+E:\GPRO_2018\DLL\GPRO.Core\bin\Debug\SystemGPRO.Serial.dll
+E:\GPRO_2018\DLL\GPRO.Core\bin\Debug\Newtonsoft.Json.dll
+E:\GPRO_2018\DLL\GPRO.Core\bin\Debug\System.Net.Http.xml
+E:\GPRO_2018\DLL\GPRO.Core\bin\Debug\System.Net.Http.Formatting.xml
+E:\GPRO_2018\DLL\GPRO.Core\obj\Debug\GPRO.Core.csprojResolveAssemblyReference.cache
+E:\GPRO_2018\DLL\GPRO.Core\obj\Debug\GPRO.Core.dll
+E:\GPRO_2018\DLL\GPRO.Core\obj\Debug\GPRO.Core.pdb
+E:\Hai_GPRO\Git IED_Alone\GPRO.Core\bin\Debug\GPRO.Core.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO.Core\bin\Debug\GPRO.Core.pdb
+E:\Hai_GPRO\Git IED_Alone\GPRO.Core\bin\Debug\System.Net.Http.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO.Core\bin\Debug\System.Net.Http.Formatting.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO.Core\bin\Debug\System.Web.Mvc.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO.Core\bin\Debug\SystemGPRO.Serial.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO.Core\obj\Debug\GPRO.Core.csprojAssemblyReference.cache
+E:\Hai_GPRO\Git IED_Alone\GPRO.Core\obj\Debug\GPRO.Core.csproj.CoreCompileInputs.cache
+E:\Hai_GPRO\Git IED_Alone\GPRO.Core\obj\Debug\GPRO.Core.csproj.CopyComplete
+E:\Hai_GPRO\Git IED_Alone\GPRO.Core\obj\Debug\GPRO.Core.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO.Core\obj\Debug\GPRO.Core.pdb
+E:\Hai_GPRO\GPRO 2021\Web_SanXuatCheckList\GPRO.Core\bin\Debug\GPRO.Core.dll
+E:\Hai_GPRO\GPRO 2021\Web_SanXuatCheckList\GPRO.Core\bin\Debug\GPRO.Core.pdb
+E:\Hai_GPRO\GPRO 2021\Web_SanXuatCheckList\GPRO.Core\bin\Debug\System.Net.Http.dll
+E:\Hai_GPRO\GPRO 2021\Web_SanXuatCheckList\GPRO.Core\bin\Debug\System.Net.Http.Formatting.dll
+E:\Hai_GPRO\GPRO 2021\Web_SanXuatCheckList\GPRO.Core\bin\Debug\System.Web.Mvc.dll
+E:\Hai_GPRO\GPRO 2021\Web_SanXuatCheckList\GPRO.Core\bin\Debug\SystemGPRO.Serial.dll
+E:\Hai_GPRO\GPRO 2021\Web_SanXuatCheckList\GPRO.Core\obj\Debug\GPRO.Core.csprojAssemblyReference.cache
+E:\Hai_GPRO\GPRO 2021\Web_SanXuatCheckList\GPRO.Core\obj\Debug\GPRO.Core.csproj.CoreCompileInputs.cache
+E:\Hai_GPRO\GPRO 2021\Web_SanXuatCheckList\GPRO.Core\obj\Debug\GPRO.Core.csproj.CopyComplete
+E:\Hai_GPRO\GPRO 2021\Web_SanXuatCheckList\GPRO.Core\obj\Debug\GPRO.Core.dll
+E:\Hai_GPRO\GPRO 2021\Web_SanXuatCheckList\GPRO.Core\obj\Debug\GPRO.Core.pdb

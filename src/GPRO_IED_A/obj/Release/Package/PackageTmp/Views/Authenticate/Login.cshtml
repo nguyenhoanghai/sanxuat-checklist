@@ -1,0 +1,27 @@
+﻿@{ Layout = null; }
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    @Styles.Render("~/Admin/css")
+    @Scripts.Render("~/bundles/modernizr") 
+</head>
+<body>
+    <div class="title-login">
+        <h2><img src="~/Content/Img/HinhBanhRangXoay.gif" style="width:50px" />Hệ Thống Quản Trị</h2><hr />
+    </div>
+    <div class="login">
+        <p><input type="text" id="username" placeholder="Tên Đăng Nhập" autocomplete="off" /></p>
+        <p><input type="password" name="password" id="password" placeholder="Mật Khẩu"></p>
+        <p class="login-submit"><button type="button" btn="Login" class="login-button">Đăng Nhập </button></p>
+        <p class="forgot-password"><a href="#" id="showPopup" data-toggle="modal" data-target="#SystemMenuModal">Bạn quên mật khẩu ?</a></p>
+    </div>
+    <div id="loading" style="display:none">
+        <img src="~/Content/Img/loading.gif" />
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Admin/jquery")  
+</body>
+</html>

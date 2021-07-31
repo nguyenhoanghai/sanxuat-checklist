@@ -1,0 +1,18 @@
+E:\Hai_GPRO\GPRO 2021\Web_SanXuatCheckList\GPRO_IED_A.Data\bin\Debug\SanXuatCheckList.Data.dll.config
+E:\Hai_GPRO\GPRO 2021\Web_SanXuatCheckList\GPRO_IED_A.Data\bin\Debug\SanXuatCheckList.Data.dll
+E:\Hai_GPRO\GPRO 2021\Web_SanXuatCheckList\GPRO_IED_A.Data\bin\Debug\SanXuatCheckList.Data.pdb
+E:\Hai_GPRO\GPRO 2021\Web_SanXuatCheckList\GPRO_IED_A.Data\bin\Debug\EntityFramework.dll
+E:\Hai_GPRO\GPRO 2021\Web_SanXuatCheckList\GPRO_IED_A.Data\obj\Debug\SanXuatCheckList.Data.csprojAssemblyReference.cache
+E:\Hai_GPRO\GPRO 2021\Web_SanXuatCheckList\GPRO_IED_A.Data\obj\Debug\SanXuatCheckList.Data.csproj.CoreCompileInputs.cache
+E:\Hai_GPRO\GPRO 2021\Web_SanXuatCheckList\GPRO_IED_A.Data\obj\Debug\SanXuatCheckList.Data.csproj.CopyComplete
+E:\Hai_GPRO\GPRO 2021\Web_SanXuatCheckList\GPRO_IED_A.Data\obj\Debug\SanXuatCheckList.Data.dll
+E:\Hai_GPRO\GPRO 2021\Web_SanXuatCheckList\GPRO_IED_A.Data\obj\Debug\SanXuatCheckList.Data.pdb
+E:\Hai_GPRO\Source App GPRO\Web\sanxuat-checklist\src\GPRO_IED_A.Data\bin\Debug\SanXuatCheckList.Data.dll.config
+E:\Hai_GPRO\Source App GPRO\Web\sanxuat-checklist\src\GPRO_IED_A.Data\bin\Debug\SanXuatCheckList.Data.dll
+E:\Hai_GPRO\Source App GPRO\Web\sanxuat-checklist\src\GPRO_IED_A.Data\bin\Debug\SanXuatCheckList.Data.pdb
+E:\Hai_GPRO\Source App GPRO\Web\sanxuat-checklist\src\GPRO_IED_A.Data\bin\Debug\EntityFramework.dll
+E:\Hai_GPRO\Source App GPRO\Web\sanxuat-checklist\src\GPRO_IED_A.Data\obj\Debug\SanXuatCheckList.Data.csprojAssemblyReference.cache
+E:\Hai_GPRO\Source App GPRO\Web\sanxuat-checklist\src\GPRO_IED_A.Data\obj\Debug\SanXuatCheckList.Data.csproj.CoreCompileInputs.cache
+E:\Hai_GPRO\Source App GPRO\Web\sanxuat-checklist\src\GPRO_IED_A.Data\obj\Debug\SanXuatCheckList.Data.csproj.CopyComplete
+E:\Hai_GPRO\Source App GPRO\Web\sanxuat-checklist\src\GPRO_IED_A.Data\obj\Debug\SanXuatCheckList.Data.dll
+E:\Hai_GPRO\Source App GPRO\Web\sanxuat-checklist\src\GPRO_IED_A.Data\obj\Debug\SanXuatCheckList.Data.pdb

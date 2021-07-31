@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CBCFD999-75FB-40D1-9F8D-D774D4FA09E4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SanXuatCheckList.Data</RootNamespace>
+    <AssemblyName>SanXuatCheckList.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Checklist.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Checklist_Job.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Checklist_JobStep.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Checklist_Job_ActionLog.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Checklist_Job_Alert.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Checklist_Job_Attachment.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Checklist_Job_Comment.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Checklist_Job_EmployeeReference.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Checklist_Job_Error.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Checklist_Job_NotifyLog.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryDetail.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Line.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LotSupplies.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Material.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialNorms.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialType.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDetail.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PO_Sell.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PO_SellDetail.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionBatch.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionFile.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProFileControl.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="P_Config.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Receiption.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiptionDetail.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SanXuatCheckListModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SanXuatCheckListModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SanXuatCheckListModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SanXuatCheckListModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SanXuatCheckListModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="SCategory.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SCompany.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SCompanyModule.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SConfig.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFeature.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Size.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SLevelCompany.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMenu.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SModule.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPermission.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SRoLe.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SRolePermission.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Status.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StatusType.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SUser.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SUserRole.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateControl.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateFile.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateFileType.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Template_Checklist.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Template_CL_Job.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Template_CL_JobStep.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Equipment.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_EquipmentAttribute.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_EquipmentGroup.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_EquipmentType.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_EquipmentTypeAttribute.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_EquipTypeAttr_Default.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_EquipType_Default.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Unit.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UnitType.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkShop.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="W_Config.cs">
+      <DependentUpon>SanXuatCheckListModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <EntityDeploy Include="SanXuatCheckListModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SanXuatCheckListModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="SanXuatCheckListModel.edmx.diagram">
+      <DependentUpon>SanXuatCheckListModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SanXuatCheckListModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SanXuatCheckListModel.edmx</DependentUpon>
+      <LastGenOutput>SanXuatCheckListModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="SanXuatCheckListModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SanXuatCheckListModel.edmx</DependentUpon>
+      <LastGenOutput>SanXuatCheckListModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

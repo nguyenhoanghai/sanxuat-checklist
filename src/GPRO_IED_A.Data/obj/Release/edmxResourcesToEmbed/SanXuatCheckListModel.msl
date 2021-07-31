@@ -1,0 +1,1275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SanXuatCheckListModelStoreContainer" CdmEntityContainer="SanXuatCheckListEntities">
+    <EntitySetMapping Name="Checklist">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Checklist">
+        <MappingFragment StoreEntitySet="Checklist">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="RelatedEmployees" ColumnName="RelatedEmployees" />
+          <ScalarProperty Name="RealEndDate" ColumnName="RealEndDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="InputDate" ColumnName="InputDate" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="Productivity" ColumnName="Productivity" />
+          <ScalarProperty Name="Quantities" ColumnName="Quantities" />
+          <ScalarProperty Name="ProductionDays" ColumnName="ProductionDays" />
+          <ScalarProperty Name="LineId" ColumnName="LineId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+          <ScalarProperty Name="POId" ColumnName="POId" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="TemplateId" ColumnName="TemplateId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Checklist_Job">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Checklist_Job">
+        <MappingFragment StoreEntitySet="Checklist_Job">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="RealQuantities" ColumnName="RealQuantities" />
+          <ScalarProperty Name="Quantities" ColumnName="Quantities" />
+          <ScalarProperty Name="ReminderDate" ColumnName="ReminderDate" />
+          <ScalarProperty Name="RealEndDate" ColumnName="RealEndDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="RelatedEmployees" ColumnName="RelatedEmployees" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="JobContent" ColumnName="JobContent" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="JobIndex" ColumnName="JobIndex" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="ChecklistJobStepId" ColumnName="ChecklistJobStepId" />
+          <ScalarProperty Name="FakeId" ColumnName="FakeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Checklist_Job_ActionLog">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Checklist_Job_ActionLog">
+        <MappingFragment StoreEntitySet="Checklist_Job_ActionLog">
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="ActionInfo" ColumnName="ActionInfo" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Checklist_Job_Alert">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Checklist_Job_Alert">
+        <MappingFragment StoreEntitySet="Checklist_Job_Alert">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Reciever" ColumnName="Reciever" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+          <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+          <ScalarProperty Name="UserSendId" ColumnName="UserSendId" />
+          <ScalarProperty Name="IsViewed" ColumnName="IsViewed" />
+          <ScalarProperty Name="Alert" ColumnName="Alert" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Checklist_Job_Attachment">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Checklist_Job_Attachment">
+        <MappingFragment StoreEntitySet="Checklist_Job_Attachment">
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Checklist_Job_Comment">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Checklist_Job_Comment">
+        <MappingFragment StoreEntitySet="Checklist_Job_Comment">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Checklist_Job_EmployeeReference">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Checklist_Job_EmployeeReference">
+        <MappingFragment StoreEntitySet="Checklist_Job_EmployeeReference">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="IsStopAlarm" ColumnName="IsStopAlarm" />
+          <ScalarProperty Name="ReminderDate" ColumnName="ReminderDate" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Checklist_Job_Error">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Checklist_Job_Error">
+        <MappingFragment StoreEntitySet="Checklist_Job_Error">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Warning" ColumnName="Warning" />
+          <ScalarProperty Name="ReasonNotFinish" ColumnName="ReasonNotFinish" />
+          <ScalarProperty Name="Solution" ColumnName="Solution" />
+          <ScalarProperty Name="UserProcessId" ColumnName="UserProcessId" />
+          <ScalarProperty Name="TimeFinish_TT" ColumnName="TimeFinish_TT" />
+          <ScalarProperty Name="TimeFinish_DK" ColumnName="TimeFinish_DK" />
+          <ScalarProperty Name="TimeError" ColumnName="TimeError" />
+          <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Checklist_Job_NotifyLog">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Checklist_Job_NotifyLog">
+        <MappingFragment StoreEntitySet="Checklist_Job_NotifyLog">
+          <ScalarProperty Name="IsDisabled" ColumnName="IsDisabled" />
+          <ScalarProperty Name="IsNotifited" ColumnName="IsNotifited" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Checklist_JobStep">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Checklist_JobStep">
+        <MappingFragment StoreEntitySet="Checklist_JobStep">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="RealQuantities" ColumnName="RealQuantities" />
+          <ScalarProperty Name="Quantities" ColumnName="Quantities" />
+          <ScalarProperty Name="ReminderDate" ColumnName="ReminderDate" />
+          <ScalarProperty Name="RealEndDate" ColumnName="RealEndDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="RelatedEmployees" ColumnName="RelatedEmployees" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="JobStepContent" ColumnName="JobStepContent" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StepIndex" ColumnName="StepIndex" />
+          <ScalarProperty Name="ChecklistId" ColumnName="ChecklistId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customer">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="UpAdjust" ColumnName="UpAdjust" />
+          <ScalarProperty Name="DebitLimitAllow" ColumnName="DebitLimitAllow" />
+          <ScalarProperty Name="DebitLimitStandard" ColumnName="DebitLimitStandard" />
+          <ScalarProperty Name="CreditAccount" ColumnName="CreditAccount" />
+          <ScalarProperty Name="DefaultAccountCode" ColumnName="DefaultAccountCode" />
+          <ScalarProperty Name="DefaultAccount" ColumnName="DefaultAccount" />
+          <ScalarProperty Name="CardNumber" ColumnName="CardNumber" />
+          <ScalarProperty Name="BankAccount" ColumnName="BankAccount" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="Representative" ColumnName="Representative" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Delivery">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Delivery">
+        <MappingFragment StoreEntitySet="Delivery">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Deliverier" ColumnName="Deliverier" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="ApprovedDate" ColumnName="ApprovedDate" />
+          <ScalarProperty Name="ApprovedUser" ColumnName="ApprovedUser" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="DateOfAccounting" ColumnName="DateOfAccounting" />
+          <ScalarProperty Name="TransactionType" ColumnName="TransactionType" />
+          <ScalarProperty Name="ExchangeRate" ColumnName="ExchangeRate" />
+          <ScalarProperty Name="UnitId" ColumnName="UnitId" />
+          <ScalarProperty Name="Reciever" ColumnName="Reciever" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="WarehouseId" ColumnName="WarehouseId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeliveryDetail">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.DeliveryDetail">
+        <MappingFragment StoreEntitySet="DeliveryDetail">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="LotSupliesId" ColumnName="LotSupliesId" />
+          <ScalarProperty Name="DeliveryId" ColumnName="DeliveryId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employee">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Line">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Line">
+        <MappingFragment StoreEntitySet="Line">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="WorkShopId" ColumnName="WorkShopId" />
+          <ScalarProperty Name="CountOfLabours" ColumnName="CountOfLabours" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LotSupplies">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.LotSupplies">
+        <MappingFragment StoreEntitySet="LotSupplies">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="SpecificationsPaking" ColumnName="SpecificationsPaking" />
+          <ScalarProperty Name="WarrantyDate" ColumnName="WarrantyDate" />
+          <ScalarProperty Name="ExpiryDate" ColumnName="ExpiryDate" />
+          <ScalarProperty Name="ManufactureDate" ColumnName="ManufactureDate" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="QuantityUsed" ColumnName="QuantityUsed" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="MaterialId" ColumnName="MaterialId" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Material">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Material">
+        <MappingFragment StoreEntitySet="Material">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="MaxQuantity" ColumnName="MaxQuantity" />
+          <ScalarProperty Name="MinQuantity" ColumnName="MinQuantity" />
+          <ScalarProperty Name="NameKH" ColumnName="NameKH" />
+          <ScalarProperty Name="NameTM" ColumnName="NameTM" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="UnitId" ColumnName="UnitId" />
+          <ScalarProperty Name="MTypeId" ColumnName="MTypeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MaterialNorms">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.MaterialNorms">
+        <MappingFragment StoreEntitySet="MaterialNorms">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Quantities" ColumnName="Quantities" />
+          <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+          <ScalarProperty Name="MaterialId" ColumnName="MaterialId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MaterialType">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.MaterialType">
+        <MappingFragment StoreEntitySet="MaterialType">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="Exchange" ColumnName="Exchange" />
+          <ScalarProperty Name="MoneyUnitId" ColumnName="MoneyUnitId" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="FromPOId" ColumnName="FromPOId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderDetail">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.OrderDetail">
+        <MappingFragment StoreEntitySet="OrderDetail">
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantities" ColumnName="Quantities" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="P_Config">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.P_Config">
+        <MappingFragment StoreEntitySet="P_Config">
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PO_Sell">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.PO_Sell">
+        <MappingFragment StoreEntitySet="PO_Sell">
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="Exchange" ColumnName="Exchange" />
+          <ScalarProperty Name="MoneyUnitId" ColumnName="MoneyUnitId" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PO_SellDetail">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.PO_SellDetail">
+        <MappingFragment StoreEntitySet="PO_SellDetail">
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantities" ColumnName="Quantities" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="POId" ColumnName="POId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="UnitId" ColumnName="UnitId" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="SizeId" ColumnName="SizeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductionBatch">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.ProductionBatch">
+        <MappingFragment StoreEntitySet="ProductionBatch">
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="UnitId" ColumnName="UnitId" />
+          <ScalarProperty Name="QuantityTT" ColumnName="QuantityTT" />
+          <ScalarProperty Name="QuantityKH" ColumnName="QuantityKH" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductionFile">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.ProductionFile">
+        <MappingFragment StoreEntitySet="ProductionFile">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ApprovedDate" ColumnName="ApprovedDate" />
+          <ScalarProperty Name="ApprovedUser" ColumnName="ApprovedUser" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="CodeUrl" ColumnName="CodeUrl" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="TemplateFileId" ColumnName="TemplateFileId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProFileControl">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.ProFileControl">
+        <MappingFragment StoreEntitySet="ProFileControl">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Checked" ColumnName="Checked" />
+          <ScalarProperty Name="ControlType" ColumnName="ControlType" />
+          <ScalarProperty Name="ControlName" ColumnName="ControlName" />
+          <ScalarProperty Name="ProductFileId" ColumnName="ProductFileId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Receiption">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Receiption">
+        <MappingFragment StoreEntitySet="Receiption">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ApprovedDate" ColumnName="ApprovedDate" />
+          <ScalarProperty Name="ApprovedUser" ColumnName="ApprovedUser" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="InputDate" ColumnName="InputDate" />
+          <ScalarProperty Name="DateOfAccounting" ColumnName="DateOfAccounting" />
+          <ScalarProperty Name="TransactionType" ColumnName="TransactionType" />
+          <ScalarProperty Name="ExchangeRate" ColumnName="ExchangeRate" />
+          <ScalarProperty Name="MoneyTypeId" ColumnName="MoneyTypeId" />
+          <ScalarProperty Name="RecieverId" ColumnName="RecieverId" />
+          <ScalarProperty Name="StoreWarehouseId" ColumnName="StoreWarehouseId" />
+          <ScalarProperty Name="FromCustomerId" ColumnName="FromCustomerId" />
+          <ScalarProperty Name="FromWarehouseId" ColumnName="FromWarehouseId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReceiptionDetail">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.ReceiptionDetail">
+        <MappingFragment StoreEntitySet="ReceiptionDetail">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LotSuppliesId" ColumnName="LotSuppliesId" />
+          <ScalarProperty Name="ReceiptionId" ColumnName="ReceiptionId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SCategory">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.SCategory">
+        <MappingFragment StoreEntitySet="SCategory">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="IsViewIcon" ColumnName="IsViewIcon" />
+          <ScalarProperty Name="Icon" ColumnName="Icon" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="OrderIndex" ColumnName="OrderIndex" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SCompany">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.SCompany">
+        <MappingFragment StoreEntitySet="SCompany">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsOwner" ColumnName="IsOwner" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="ParentNode" ColumnName="ParentNode" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="LevelCompanyId" ColumnName="LevelCompanyId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SCompanyModule">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.SCompanyModule">
+        <MappingFragment StoreEntitySet="SCompanyModule">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SConfig">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.SConfig">
+        <MappingFragment StoreEntitySet="SConfig">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="IsHidden" ColumnName="IsHidden" />
+          <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="ConpanyId" ColumnName="ConpanyId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SFeature">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.SFeature">
+        <MappingFragment StoreEntitySet="SFeature">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsSystem" ColumnName="IsSystem" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="SystemName" ColumnName="SystemName" />
+          <ScalarProperty Name="FeatureName" ColumnName="FeatureName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Size">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Size">
+        <MappingFragment StoreEntitySet="Size">
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SLevelCompany">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.SLevelCompany">
+        <MappingFragment StoreEntitySet="SLevelCompany">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="OrderIndex" ColumnName="OrderIndex" />
+          <ScalarProperty Name="LevelName" ColumnName="LevelName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SMenu">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.SMenu">
+        <MappingFragment StoreEntitySet="SMenu">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Icon" ColumnName="Icon" />
+          <ScalarProperty Name="IsViewIcon" ColumnName="IsViewIcon" />
+          <ScalarProperty Name="IsShow" ColumnName="IsShow" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="OrderIndex" ColumnName="OrderIndex" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="MenuCategoryId" ColumnName="MenuCategoryId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SModule">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.SModule">
+        <MappingFragment StoreEntitySet="SModule">
+          <ScalarProperty Name="IsShow" ColumnName="IsShow" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ModuleUrl" ColumnName="ModuleUrl" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="OrderIndex" ColumnName="OrderIndex" />
+          <ScalarProperty Name="IsSystem" ColumnName="IsSystem" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="SystemName" ColumnName="SystemName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SPermission">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.SPermission">
+        <MappingFragment StoreEntitySet="SPermission">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PermissionName" ColumnName="PermissionName" />
+          <ScalarProperty Name="SystemName" ColumnName="SystemName" />
+          <ScalarProperty Name="PermissionTypeId" ColumnName="PermissionTypeId" />
+          <ScalarProperty Name="FeatureId" ColumnName="FeatureId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SRoLe">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.SRoLe">
+        <MappingFragment StoreEntitySet="SRoLe">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsSystem" ColumnName="IsSystem" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SRolePermission">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.SRolePermission">
+        <MappingFragment StoreEntitySet="SRolePermission">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PermissionId" ColumnName="PermissionId" />
+          <ScalarProperty Name="FeatureId" ColumnName="FeatureId" />
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Status">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Status">
+        <MappingFragment StoreEntitySet="Status">
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StatusTypeId" ColumnName="StatusTypeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusType">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.StatusType">
+        <MappingFragment StoreEntitySet="StatusType">
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUser">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.SUser">
+        <MappingFragment StoreEntitySet="SUser">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="WorkshopIds" ColumnName="WorkshopIds" />
+          <ScalarProperty Name="FisrtName" ColumnName="FisrtName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="LockedTime" ColumnName="LockedTime" />
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="NoteForgotPassword" ColumnName="NoteForgotPassword" />
+          <ScalarProperty Name="IsForgotPassword" ColumnName="IsForgotPassword" />
+          <ScalarProperty Name="IsRequireChangePW" ColumnName="IsRequireChangePW" />
+          <ScalarProperty Name="IsLock" ColumnName="IsLock" />
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IsOwner" ColumnName="IsOwner" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUserRole">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.SUserRole">
+        <MappingFragment StoreEntitySet="SUserRole">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Decription" ColumnName="Decription" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Equipment">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.T_Equipment">
+        <MappingFragment StoreEntitySet="T_Equipment">
+          <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="EquipmentGroupId" ColumnName="EquipmentGroupId" />
+          <ScalarProperty Name="EquipmentTypeId" ColumnName="EquipmentTypeId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Expend" ColumnName="Expend" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_EquipmentAttribute">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.T_EquipmentAttribute">
+        <MappingFragment StoreEntitySet="T_EquipmentAttribute">
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Column20" ColumnName="Column20" />
+          <ScalarProperty Name="Column19" ColumnName="Column19" />
+          <ScalarProperty Name="Column18" ColumnName="Column18" />
+          <ScalarProperty Name="Column17" ColumnName="Column17" />
+          <ScalarProperty Name="Column16" ColumnName="Column16" />
+          <ScalarProperty Name="Column15" ColumnName="Column15" />
+          <ScalarProperty Name="Column14" ColumnName="Column14" />
+          <ScalarProperty Name="Column13" ColumnName="Column13" />
+          <ScalarProperty Name="Column12" ColumnName="Column12" />
+          <ScalarProperty Name="Column11" ColumnName="Column11" />
+          <ScalarProperty Name="Column10" ColumnName="Column10" />
+          <ScalarProperty Name="Column9" ColumnName="Column9" />
+          <ScalarProperty Name="Column8" ColumnName="Column8" />
+          <ScalarProperty Name="Column7" ColumnName="Column7" />
+          <ScalarProperty Name="Column6" ColumnName="Column6" />
+          <ScalarProperty Name="Column5" ColumnName="Column5" />
+          <ScalarProperty Name="Column4" ColumnName="Column4" />
+          <ScalarProperty Name="Column3" ColumnName="Column3" />
+          <ScalarProperty Name="Column2" ColumnName="Column2" />
+          <ScalarProperty Name="Column1" ColumnName="Column1" />
+          <ScalarProperty Name="EquipmentTypeId" ColumnName="EquipmentTypeId" />
+          <ScalarProperty Name="EquipmentId" ColumnName="EquipmentId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_EquipmentGroup">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.T_EquipmentGroup">
+        <MappingFragment StoreEntitySet="T_EquipmentGroup">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Icon" ColumnName="Icon" />
+          <ScalarProperty Name="GroupCode" ColumnName="GroupCode" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_EquipmentType">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.T_EquipmentType">
+        <MappingFragment StoreEntitySet="T_EquipmentType">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+          <ScalarProperty Name="EquipTypeDefaultId" ColumnName="EquipTypeDefaultId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_EquipmentTypeAttribute">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.T_EquipmentTypeAttribute">
+        <MappingFragment StoreEntitySet="T_EquipmentTypeAttribute">
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="EquipTypeAtrrDefault_Id" ColumnName="EquipTypeAtrrDefault_Id" />
+          <ScalarProperty Name="IsUseForTime" ColumnName="IsUseForTime" />
+          <ScalarProperty Name="OrderIndex" ColumnName="OrderIndex" />
+          <ScalarProperty Name="EquipmentTypeId" ColumnName="EquipmentTypeId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_EquipType_Default">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.T_EquipType_Default">
+        <MappingFragment StoreEntitySet="T_EquipType_Default">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_EquipTypeAttr_Default">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.T_EquipTypeAttr_Default">
+        <MappingFragment StoreEntitySet="T_EquipTypeAttr_Default">
+          <ScalarProperty Name="EquipType_DefaultId" ColumnName="EquipType_DefaultId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Template_Checklist">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Template_Checklist">
+        <MappingFragment StoreEntitySet="Template_Checklist">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Template_CL_Job">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Template_CL_Job">
+        <MappingFragment StoreEntitySet="Template_CL_Job">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="JobContent" ColumnName="JobContent" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="JobIndex" ColumnName="JobIndex" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Template_JobStepId" ColumnName="Template_JobStepId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Template_CL_JobStep">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Template_CL_JobStep">
+        <MappingFragment StoreEntitySet="Template_CL_JobStep">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="JobStepContent" ColumnName="JobStepContent" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StepIndex" ColumnName="StepIndex" />
+          <ScalarProperty Name="TemplateId" ColumnName="TemplateId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TemplateControl">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.TemplateControl">
+        <MappingFragment StoreEntitySet="TemplateControl">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Checked" ColumnName="Checked" />
+          <ScalarProperty Name="ControlType" ColumnName="ControlType" />
+          <ScalarProperty Name="ControlName" ColumnName="ControlName" />
+          <ScalarProperty Name="TemplateId" ColumnName="TemplateId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TemplateFile">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.TemplateFile">
+        <MappingFragment StoreEntitySet="TemplateFile">
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ApprovedUser" ColumnName="ApprovedUser" />
+          <ScalarProperty Name="ApprovedDate" ColumnName="ApprovedDate" />
+          <ScalarProperty Name="IsApprove" ColumnName="IsApprove" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TemplateFileTypeId" ColumnName="TemplateFileTypeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TemplateFileType">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.TemplateFileType">
+        <MappingFragment StoreEntitySet="TemplateFileType">
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Unit">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.Unit">
+        <MappingFragment StoreEntitySet="Unit">
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UnitTypeId" ColumnName="UnitTypeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UnitType">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.UnitType">
+        <MappingFragment StoreEntitySet="UnitType">
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="W_Config">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.W_Config">
+        <MappingFragment StoreEntitySet="W_Config">
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WareHouse">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.WareHouse">
+        <MappingFragment StoreEntitySet="WareHouse">
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsAgency" ColumnName="IsAgency" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkShop">
+      <EntityTypeMapping TypeName="SanXuatCheckListModel.WorkShop">
+        <MappingFragment StoreEntitySet="WorkShop">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedUser" ColumnName="DeletedUser" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedUser" ColumnName="UpdatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

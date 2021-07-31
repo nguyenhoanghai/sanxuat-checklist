@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3BDBAC94-17BA-44C8-88A9-33FF04A7435E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SanXuatCheckList.Business</RootNamespace>
+    <AssemblyName>SanXuatCheckList.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="GPRO.Ultilities">
+      <HintPath>..\Libs\GPRO.Ultilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Hugate.Framework">
+      <HintPath>..\Libs\Hugate.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList">
+      <HintPath>..\Libs\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLLAppConfig.cs" />
+    <Compile Include="BLLChecklistJob.cs" />
+    <Compile Include="BLLChecklistJobAttachment.cs" />
+    <Compile Include="BLLChecklistJobComment.cs" />
+    <Compile Include="BLLChecklistJobAlert.cs" />
+    <Compile Include="BLLChecklistJobError.cs" />
+    <Compile Include="BLLChecklistJobStep.cs" />
+    <Compile Include="BLLConfig.cs" />
+    <Compile Include="BLLDelivery.cs" />
+    <Compile Include="BLLDeliveryDetail.cs" />
+    <Compile Include="BLLEmployee.cs" />
+    <Compile Include="BLLEquipmentTypeAttribute.cs" />
+    <Compile Include="BLLEquipmentType.cs" />
+    <Compile Include="BLLEquipmentGroup.cs" />
+    <Compile Include="BLLEquipmentAttribute.cs" />
+    <Compile Include="BLLEquipment.cs" />
+    <Compile Include="BLLHelper.cs" />
+    <Compile Include="BLLLotSupplies.cs" />
+    <Compile Include="BLLMaterial.cs" />
+    <Compile Include="BLLMaterialType.cs" />
+    <Compile Include="BLLMenu.cs" />
+    <Compile Include="BLLMenuCategory.cs" />
+    <Compile Include="BLLModule.cs" />
+    <Compile Include="BLLCustomer.cs" />
+    <Compile Include="BLLOrder.cs" />
+    <Compile Include="BLLProduct.cs" />
+    <Compile Include="BLLProductionFile.cs" />
+    <Compile Include="BLLReceiption.cs" />
+    <Compile Include="BLLReceiptionDetail.cs" />
+    <Compile Include="BLLRole.cs" />
+    <Compile Include="BLLRolePermission.cs" />
+    <Compile Include="BLLSize.cs" />
+    <Compile Include="BLLStatus.cs" />
+    <Compile Include="BLLChecklist.cs" />
+    <Compile Include="BLLStatusType.cs" />
+    <Compile Include="BLLTemplateChecklist.cs" />
+    <Compile Include="BLLTemplateChecklistJob.cs" />
+    <Compile Include="BLLTemplateChecklistJobStep.cs" />
+    <Compile Include="BLLPO.cs" />
+    <Compile Include="BLLTemplateFile.cs" />
+    <Compile Include="BLLUnitType.cs" />
+    <Compile Include="BLLUnit.cs" />
+    <Compile Include="BLLWareHouse.cs" />
+    <Compile Include="BLLWorkshop.cs" />
+    <Compile Include="BLLLine.cs" />
+    <Compile Include="BLLUser.cs" />
+    <Compile Include="BLLUserRole.cs" />
+    <Compile Include="EncryptString.cs" />
+    <Compile Include="Enum\eCheckPermissionType.cs" />
+    <Compile Include="Enum\eConfigCode.cs" />
+    <Compile Include="Enum\eEquipmentObjectType.cs" />
+    <Compile Include="Enum\eEquipType_Default.cs" />
+    <Compile Include="Enum\eErrorPermissionType.cs" />
+    <Compile Include="Enum\eErrorType.cs" />
+    <Compile Include="Enum\eForgotPasswordActionType.cs" />
+    <Compile Include="Enum\eIEDConfigName.cs" />
+    <Compile Include="Enum\eMenuCategoryType.cs" />
+    <Compile Include="Enum\eObjectType.cs" />
+    <Compile Include="Enum\ePermissionType.cs" />
+    <Compile Include="Enum\eSendType.cs" />
+    <Compile Include="Enum\eStatus.cs" />
+    <Compile Include="Enum\eString.cs" />
+    <Compile Include="Enum\eTemplateFileType.cs" />
+    <Compile Include="Enum\eSystemName.cs" />
+    <Compile Include="Enum\eTableName.cs" />
+    <Compile Include="Enum\eVersionObjectType.cs" />
+    <Compile Include="Model\AppConfigModel.cs" />
+    <Compile Include="Model\ApplyPressureLibraryModel.cs" />
+    <Compile Include="Model\AttachmentModel.cs" />
+    <Compile Include="Model\BigAlertModel.cs" />
+    <Compile Include="Model\BigChecklistModel.cs" />
+    <Compile Include="Model\CategoryModel.cs" />
+    <Compile Include="Model\ChecklistJobAlertModel.cs" />
+    <Compile Include="Model\ChecklistModel.cs" />
+    <Compile Include="Model\CommentModel.cs" />
+    <Compile Include="Model\ControlModel.cs" />
+    <Compile Include="Model\CustomerModel.cs" />
+    <Compile Include="Model\DeliveryDetailModel.cs" />
+    <Compile Include="Model\DeliveryModel.cs" />
+    <Compile Include="Model\FileUploadModel.cs" />
+    <Compile Include="Model\LotSuppliesModel.cs" />
+    <Compile Include="Model\ManipulationEquipmentModel.cs" />
+    <Compile Include="Model\ManipulationLibraryModel.cs" />
+    <Compile Include="Model\ManipulationLibrarySmallModel.cs" />
+    <Compile Include="Model\ManipulationTypeModel.cs" />
+    <Compile Include="Model\CommodityAnalysisModel.cs" />
+    <Compile Include="Model\Commo_Ana_PhaseModel.cs" />
+    <Compile Include="Model\Commo_Ana_Phase_ManiModel.cs" />
+    <Compile Include="Model\Commo_Ana_Phase_TimePrepareModel.cs" />
+    <Compile Include="Model\EmployeeModel.cs" />
+    <Compile Include="Model\EmployeeWithSkillModel.cs" />
+    <Compile Include="Model\Employee_PhaseGroupSkillModel.cs" />
+    <Compile Include="Model\EquipmentGroupModel.cs" />
+    <Compile Include="Model\ExportPhaseActionsModel.cs" />
+    <Compile Include="Model\ExportTechProcessModel.cs" />
+    <Compile Include="Model\LabourDivisionModel.cs" />
+    <Compile Include="Model\LineModel.cs" />
+    <Compile Include="Model\LinePositionDetailModel.cs" />
+    <Compile Include="Model\LinePositionModel.cs" />
+    <Compile Include="Model\LinePositionsAndTechProcessActiveVersionModel.cs" />
+    <Compile Include="Model\MaterialModel.cs" />
+    <Compile Include="Model\MaterialNormsModel.cs" />
+    <Compile Include="Model\MaterialsModel.cs" />
+    <Compile Include="Model\MaterialTypeModel.cs" />
+    <Compile Include="Model\Menu.cs" />
+    <Compile Include="Model\MenuModel.cs" />
+    <Compile Include="Model\ModelAtribute.cs" />
+    <Compile Include="Model\ModelConfig.cs" />
+    <Compile Include="Model\ModelEquipment.cs" />
+    <Compile Include="Model\ModelEquipmentAttribute.cs" />
+    <Compile Include="Model\ModelEquipmentType.cs" />
+    <Compile Include="Model\ModelEquipmentTypeAttribute.cs" />
+    <Compile Include="Model\ModelErrorLog.cs" />
+    <Compile Include="Model\ModelFeature.cs" />
+    <Compile Include="Model\ModelListHiddenObjectIdAndDefaultValue.cs" />
+    <Compile Include="Model\ModelListSelectItemAndDefaultValue.cs" />
+    <Compile Include="Model\ModelModule.cs" />
+    <Compile Include="Model\ModelPermission.cs" />
+    <Compile Include="Model\MenuCategory.cs" />
+    <Compile Include="Model\ModelRole.cs" />
+    <Compile Include="Model\ModelRolePermission.cs" />
+    <Compile Include="Model\ModelSelectItem.cs" />
+    <Compile Include="Model\Module.cs" />
+    <Compile Include="Model\PagedListModel.cs" />
+    <Compile Include="Model\PhaseGroupModel.cs" />
+    <Compile Include="Model\PhaseLibModel.cs" />
+    <Compile Include="Model\OrderModel.cs" />
+    <Compile Include="Model\POModel.cs" />
+    <Compile Include="Model\ProductionFileModel.cs" />
+    <Compile Include="Model\ProductModel.cs" />
+    <Compile Include="Model\ReceiptionDetailModel.cs" />
+    <Compile Include="Model\ReceiptionModel.cs" />
+    <Compile Include="Model\ReportInventoryModel.cs" />
+    <Compile Include="Model\ReportModel.cs" />
+    <Compile Include="Model\RequestModel.cs" />
+    <Compile Include="Model\ResponseBase.cs" />
+    <Compile Include="Model\SizeModel.cs" />
+    <Compile Include="Model\StatusModel.cs" />
+    <Compile Include="Model\StatusTypeModel.cs" />
+    <Compile Include="Model\SuppliesModel.cs" />
+    <Compile Include="Model\TechProcessVerDetailGroupModel.cs" />
+    <Compile Include="Model\TechProcessVerDetailModel.cs" />
+    <Compile Include="Model\TechProcessVersionModel.cs" />
+    <Compile Include="Model\TemplateChecklistJobModel.cs" />
+    <Compile Include="Model\TemplateChecklistJobStepModel.cs" />
+    <Compile Include="Model\TemplateChecklistModel.cs" />
+    <Compile Include="Model\TemplateFileModel.cs" />
+    <Compile Include="Model\TimePrepareModel.cs" />
+    <Compile Include="Model\TimeTypePrepareModel.cs" />
+    <Compile Include="Model\UnitTypeModel.cs" />
+    <Compile Include="Model\UnitModel.cs" />
+    <Compile Include="Model\UserInfo.cs" />
+    <Compile Include="Model\UserModel.cs" />
+    <Compile Include="Model\UserRoleModel.cs" />
+    <Compile Include="Model\WareHouseModel.cs" />
+    <Compile Include="Model\WorkerLevelModel.cs" />
+    <Compile Include="Model\WorkShopModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Model\UserService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GPRO.Core\GPRO.Core.csproj">
+      <Project>{c73f876d-cf6e-4e38-9efa-cea26f34f047}</Project>
+      <Name>GPRO.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GPRO_IED_A.Data\SanXuatCheckList.Data.csproj">
+      <Project>{cbcfd999-75fb-40d1-9f8d-d774d4fa09e4}</Project>
+      <Name>SanXuatCheckList.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

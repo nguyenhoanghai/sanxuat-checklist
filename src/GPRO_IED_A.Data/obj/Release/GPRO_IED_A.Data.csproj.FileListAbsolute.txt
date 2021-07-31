@@ -1,0 +1,16 @@
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A.Data\bin\Release\GPRO_IED_A.Data.dll.config
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A.Data\bin\Release\GPRO_IED_A.Data.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A.Data\bin\Release\GPRO_IED_A.Data.pdb
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A.Data\bin\Release\EntityFramework.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A.Data\obj\Release\GPRO_IED_A.Data.csprojResolveAssemblyReference.cache
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A.Data\obj\Release\GPRO_IED_A.Data.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A.Data\obj\Release\GPRO_IED_A.Data.pdb
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A.Data\bin\Release\GPRO_IED_A.Data.dll.config
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A.Data\bin\Release\GPRO_IED_A.Data.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A.Data\bin\Release\GPRO_IED_A.Data.pdb
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A.Data\bin\Release\EntityFramework.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A.Data\obj\Release\GPRO_IED_A.Data.csprojAssemblyReference.cache
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A.Data\obj\Release\GPRO_IED_A.Data.csproj.CoreCompileInputs.cache
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A.Data\obj\Release\GPRO_IED_A.Data.csproj.CopyComplete
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A.Data\obj\Release\GPRO_IED_A.Data.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A.Data\obj\Release\GPRO_IED_A.Data.pdb

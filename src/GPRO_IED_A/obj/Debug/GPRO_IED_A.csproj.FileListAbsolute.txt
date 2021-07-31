@@ -1,0 +1,145 @@
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\obj\Debug\GPRO_IED_A.csprojResolveAssemblyReference.cache
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\GPRO_IED_A.dll.config
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\GPRO_IED_A.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\GPRO_IED_A.pdb
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Antlr3.Runtime.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\EntityFramework.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\EntityFramework.SqlServer.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\EPPlus.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\GPRO.Core.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\GPRO.Ultilities.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\GPRO_IED_A.Business.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\GPRO_IED_A.Data.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Hugate.Framework.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.AspNet.Identity.Core.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.Owin.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.Owin.Security.Cookies.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.Owin.Security.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.Owin.Security.Facebook.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.Owin.Security.Google.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.Owin.Security.OAuth.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.Owin.Security.Twitter.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.Web.Infrastructure.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Newtonsoft.Json.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Owin.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\PagedList.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\System.Net.Http.Formatting.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\System.Web.Helpers.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\System.Web.Http.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\System.Web.Http.WebHost.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\System.Web.Mvc.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\System.Web.Optimization.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\System.Web.Razor.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\System.Web.WebPages.Deployment.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\System.Web.WebPages.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\System.Web.WebPages.Razor.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\SystemGPRO.Serial.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\WebGrease.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\GPRO.Core.pdb
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\GPRO_IED_A.Business.pdb
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\GPRO_IED_A.Data.pdb
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\System.Web.Helpers.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\System.Web.Mvc.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\System.Web.Optimization.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\System.Web.Razor.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\System.Web.WebPages.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\System.Web.WebPages.Deployment.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\System.Web.WebPages.Razor.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Antlr3.Runtime.pdb
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Newtonsoft.Json.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\System.Net.Http.Formatting.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\System.Web.Http.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\System.Web.Http.WebHost.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\EntityFramework.SqlServer.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.AspNet.Identity.Core.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.Owin.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.Owin.Security.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.Owin.Security.Facebook.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.Owin.Security.Cookies.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.Owin.Security.OAuth.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.Owin.Security.Google.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.Owin.Security.Twitter.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\obj\Debug\GPRO_IED_A.dll
+E:\GPRO_2018\Website\GPRO_IED_A\GPRO_IED_A\GPRO_IED_A\obj\Debug\GPRO_IED_A.pdb
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\GPRO_IED_A.dll.config
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\GPRO_IED_A.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\GPRO_IED_A.pdb
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Antlr3.Runtime.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\EntityFramework.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\EntityFramework.SqlServer.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\EPPlus.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\GPRO.Core.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\GPRO.Ultilities.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\GPRO_IED_A.Business.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\GPRO_IED_A.Data.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Hugate.Framework.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.Owin.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.Owin.Security.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.Owin.Security.Google.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.Web.Infrastructure.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Newtonsoft.Json.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Owin.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\PagedList.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\System.Net.Http.Formatting.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\System.Web.Helpers.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\System.Web.Http.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\System.Web.Http.WebHost.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\System.Web.Mvc.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\System.Web.Optimization.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\System.Web.Razor.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\System.Web.WebPages.Deployment.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\System.Web.WebPages.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\System.Web.WebPages.Razor.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\SystemGPRO.Serial.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\WebGrease.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\GPRO.Core.pdb
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\GPRO_IED_A.Business.pdb
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\GPRO_IED_A.Data.pdb
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\GPRO_IED_A.Data.dll.config
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\System.Web.Helpers.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\System.Web.Mvc.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\System.Web.Optimization.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\System.Web.Razor.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\System.Web.WebPages.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\System.Web.WebPages.Deployment.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\System.Web.WebPages.Razor.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Antlr3.Runtime.pdb
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Newtonsoft.Json.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\System.Net.Http.Formatting.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\System.Web.Http.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\System.Web.Http.WebHost.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\EntityFramework.SqlServer.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.Owin.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.Owin.Security.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.Owin.Security.Google.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\obj\Debug\GPRO_IED_A.csprojAssemblyReference.cache
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\obj\Debug\GPRO_IED_A.csproj.CoreCompileInputs.cache
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\obj\Debug\GPRO_IED_A.csproj.CopyComplete
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\obj\Debug\GPRO_IED_A.dll
+E:\Hai_GPRO\Git IED_Alone\GPRO_IED_A\obj\Debug\GPRO_IED_A.pdb

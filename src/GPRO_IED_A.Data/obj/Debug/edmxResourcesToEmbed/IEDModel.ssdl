@@ -1,0 +1,1949 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IEDModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="HR_Employee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="550" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="550" Nullable="false" />
+    <Property Name="Birthday" Type="datetime" Nullable="false" />
+    <Property Name="Gender" Type="bit" Nullable="false" />
+    <Property Name="CompanyId" Type="int" />
+    <Property Name="Image" Type="varchar" MaxLength="550" />
+    <Property Name="Email" Type="varchar" MaxLength="250" />
+    <Property Name="Mobile" Type="varchar" MaxLength="50" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Position" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="OrderIndex" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="Icon" Type="nvarchar" MaxLength="255" />
+    <Property Name="IsViewIcon" Type="bit" Nullable="false" />
+    <Property Name="Link" Type="nvarchar" MaxLength="255" />
+    <Property Name="ModuleId" Type="int" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CompanyId" Type="int" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SCompany">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LevelCompanyId" Type="int" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" MaxLength="250" />
+    <Property Name="Telephone" Type="nvarchar" MaxLength="20" />
+    <Property Name="TaxCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="ParentId" Type="int" />
+    <Property Name="ParentNode" Type="nvarchar" MaxLength="200" />
+    <Property Name="Logo" Type="nvarchar(max)" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="IsOwner" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SCompanyModule">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="ModuleName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SConfig">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ConpanyId" Type="int" Nullable="false" />
+    <Property Name="TableName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ObjectId" Type="int" />
+    <Property Name="IsHidden" Type="bit" Nullable="false" />
+    <Property Name="IsDefault" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SFeature">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FeatureName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="SystemName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ModuleId" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="200" />
+    <Property Name="IsSystem" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="IsDefault" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SLevelCompany">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LevelName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="OrderIndex" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SMenu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MenuCategoryId" Type="int" Nullable="false" />
+    <Property Name="MenuName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="OrderIndex" Type="int" Nullable="false" />
+    <Property Name="Link" Type="nvarchar" MaxLength="255" />
+    <Property Name="IsShow" Type="bit" Nullable="false" />
+    <Property Name="IsViewIcon" Type="bit" Nullable="false" />
+    <Property Name="Icon" Type="nvarchar" MaxLength="255" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="ModuleId" Type="int" Nullable="false" />
+    <Property Name="CompanyId" Type="int" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SModule">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SystemName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ModuleName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="IsSystem" Type="bit" Nullable="false" />
+    <Property Name="OrderIndex" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" />
+    <Property Name="ModuleUrl" Type="nvarchar" MaxLength="255" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="IsShow" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SPermission">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FeatureId" Type="int" Nullable="false" />
+    <Property Name="PermissionTypeId" Type="int" Nullable="false" />
+    <Property Name="SystemName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="PermissionName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" />
+    <Property Name="Url" Type="nvarchar(max)" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="IsDefault" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SRoLe">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="RoleName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="IsSystem" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SRolePermission">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+    <Property Name="ModuleId" Type="int" Nullable="false" />
+    <Property Name="FeatureId" Type="int" Nullable="false" />
+    <Property Name="PermissionId" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="IsOwner" Type="bit" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="PassWord" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="IsLock" Type="bit" Nullable="false" />
+    <Property Name="IsRequireChangePW" Type="bit" Nullable="false" />
+    <Property Name="IsForgotPassword" Type="bit" Nullable="false" />
+    <Property Name="NoteForgotPassword" Type="nvarchar" MaxLength="250" />
+    <Property Name="Email" Type="nvarchar" MaxLength="250" />
+    <Property Name="ImagePath" Type="nvarchar" MaxLength="200" />
+    <Property Name="LockedTime" Type="datetime" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="100" />
+    <Property Name="FisrtName" Type="nvarchar" MaxLength="200" />
+    <Property Name="WorkshopIds" Type="varchar" MaxLength="250" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SUserRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="Decription" Type="nvarchar" MaxLength="200" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SWorkerLevel">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Coefficient" Type="float" Nullable="false" />
+    <Property Name="Note" Type="nvarchar(max)" />
+    <Property Name="CompanyId" Type="int" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_ApplyPressureLibrary">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Level" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Value" Type="float" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_CA_Phase">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Index" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="EquipmentId" Type="int" />
+    <Property Name="WorkerLevelId" Type="int" Nullable="false" />
+    <Property Name="PhaseGroupId" Type="int" Nullable="false" />
+    <Property Name="ParentId" Type="int" Nullable="false" />
+    <Property Name="TotalTMU" Type="float" Nullable="false" />
+    <Property Name="ApplyPressuresId" Type="int" />
+    <Property Name="PercentWasteEquipment" Type="float" Nullable="false" />
+    <Property Name="PercentWasteManipulation" Type="float" Nullable="false" />
+    <Property Name="PercentWasteSpecial" Type="float" Nullable="false" />
+    <Property Name="PercentWasteMaterial" Type="float" Nullable="false" />
+    <Property Name="Node" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="Video" Type="varchar" MaxLength="500" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="IsLibrary" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_CA_Phase_Mani">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CA_PhaseId" Type="int" Nullable="false" />
+    <Property Name="OrderIndex" Type="int" Nullable="false" />
+    <Property Name="ManipulationId" Type="int" />
+    <Property Name="ManipulationCode" Type="nchar" MaxLength="30" />
+    <Property Name="ManipulationName" Type="nvarchar" MaxLength="500" />
+    <Property Name="TMUEquipment" Type="float" />
+    <Property Name="TMUManipulation" Type="float" />
+    <Property Name="Loop" Type="float" Nullable="false" />
+    <Property Name="TotalTMU" Type="float" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_CA_Phase_TimePrepare">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Commo_Ana_PhaseId" Type="int" Nullable="false" />
+    <Property Name="TimePrepareId" Type="int" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_CommodityAnalysis">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="ObjectType" Type="int" Nullable="false" />
+    <Property Name="ObjectId" Type="int" Nullable="false" />
+    <Property Name="ParentId" Type="int" Nullable="false" />
+    <Property Name="Node" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_CompanySkill">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Coefficient" Type="float" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="250" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="SkillLevel" Type="float" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_CompanySkillDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanySkillId" Type="int" Nullable="false" />
+    <Property Name="PhaseGroupId" Type="int" Nullable="false" />
+    <Property Name="PassLevel" Type="int" Nullable="false" />
+    <Property Name="Performance" Type="float" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_Customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="CompanyId" Type="int" />
+  </EntityType>
+  <EntityType Name="T_Employee_CompanySkill">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="CompanySkillId" Type="int" Nullable="false" />
+    <Property Name="Coefficient" Type="float" Nullable="false" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="IsCalculatedByFormula" Type="bit" Nullable="false" />
+    <Property Name="IsUsed" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_Employee_PhaseGroupSkill">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="PhaseGroupId" Type="int" Nullable="false" />
+    <Property Name="Level" Type="float" Nullable="false" />
+    <Property Name="Performance" Type="float" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_EmployeePhase">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderId" Type="int" Nullable="false" />
+    <Property Name="CommodityId" Type="int" Nullable="false" />
+    <Property Name="LineId" Type="int" Nullable="false" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="ListEmployeePhase" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="Estatus" Type="bit" />
+  </EntityType>
+  <EntityType Name="T_Equipment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="500" />
+    <Property Name="Name" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Expend" Type="float" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="EquipmentTypeId" Type="int" Nullable="false" />
+    <Property Name="EquipmentGroupId" Type="int" Nullable="false" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="ObjectType" Type="int" />
+  </EntityType>
+  <EntityType Name="T_EquipmentAttribute">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EquipmentId" Type="int" Nullable="false" />
+    <Property Name="EquipmentTypeId" Type="int" Nullable="false" />
+    <Property Name="Column1" Type="nvarchar" MaxLength="200" />
+    <Property Name="Column2" Type="nvarchar" MaxLength="200" />
+    <Property Name="Column3" Type="nvarchar" MaxLength="200" />
+    <Property Name="Column4" Type="nvarchar" MaxLength="200" />
+    <Property Name="Column5" Type="nvarchar" MaxLength="200" />
+    <Property Name="Column6" Type="nvarchar" MaxLength="200" />
+    <Property Name="Column7" Type="nvarchar" MaxLength="200" />
+    <Property Name="Column8" Type="nvarchar" MaxLength="200" />
+    <Property Name="Column9" Type="nvarchar" MaxLength="200" />
+    <Property Name="Column10" Type="nvarchar" MaxLength="200" />
+    <Property Name="Column11" Type="nvarchar" MaxLength="200" />
+    <Property Name="Column12" Type="nvarchar" MaxLength="200" />
+    <Property Name="Column13" Type="nvarchar" MaxLength="200" />
+    <Property Name="Column14" Type="nvarchar" MaxLength="200" />
+    <Property Name="Column15" Type="nvarchar" MaxLength="200" />
+    <Property Name="Column16" Type="nvarchar" MaxLength="200" />
+    <Property Name="Column17" Type="nvarchar" MaxLength="200" />
+    <Property Name="Column18" Type="nvarchar" MaxLength="200" />
+    <Property Name="Column19" Type="nvarchar" MaxLength="200" />
+    <Property Name="Column20" Type="nvarchar" MaxLength="200" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_EquipmentGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GroupName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="GroupCode" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Icon" Type="nvarchar" MaxLength="500" />
+    <Property Name="Note" Type="nvarchar(max)" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_EquipmentType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="EquipTypeDefaultId" Type="int" />
+    <Property Name="ObjectType" Type="int" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_EquipmentTypeAttribute">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="EquipmentTypeId" Type="int" Nullable="false" />
+    <Property Name="OrderIndex" Type="int" Nullable="false" />
+    <Property Name="IsUseForTime" Type="bit" Nullable="false" />
+    <Property Name="EquipTypeAtrrDefault_Id" Type="int" />
+    <Property Name="IsDefault" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_EquipType_Default">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_EquipTypeAttr_Default">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="EquipType_DefaultId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_File">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="250" />
+    <Property Name="Path" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="250" />
+    <Property Name="Size" Type="int" />
+    <Property Name="FileType" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_IEDConfig">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Value" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_LabourDivision">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TechProVer_Id" Type="int" Nullable="false" />
+    <Property Name="ParentId" Type="int" Nullable="false" />
+    <Property Name="LineId" Type="int" Nullable="false" />
+    <Property Name="TotalPosition" Type="int" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_Line">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="200" />
+    <Property Name="CountOfLabours" Type="int" Nullable="false" />
+    <Property Name="WorkShopId" Type="int" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_LinePosition">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LabourDivisionId" Type="int" Nullable="false" />
+    <Property Name="OrderIndex" Type="int" Nullable="false" />
+    <Property Name="EmployeeId" Type="int" />
+    <Property Name="IsHasBTP" Type="bit" Nullable="false" />
+    <Property Name="IsHasExitLine" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_LinePositionDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Line_PositionId" Type="int" Nullable="false" />
+    <Property Name="TechProVerDe_Id" Type="int" Nullable="false" />
+    <Property Name="OrderIndex" Type="int" Nullable="false" />
+    <Property Name="DevisionPercent" Type="float" Nullable="false" />
+    <Property Name="NumberOfLabor" Type="float" Nullable="false" />
+    <Property Name="Note" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsPass" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_ManipulationEquipment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ManipulationId" Type="int" Nullable="false" />
+    <Property Name="EquipmentId" Type="int" Nullable="false" />
+    <Property Name="UserTMU" Type="float" Nullable="false" />
+    <Property Name="MachineTMU" Type="float" Nullable="false" />
+    <Property Name="Note" Type="nvarchar(max)" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_ManipulationFile">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ManipulationId" Type="int" Nullable="false" />
+    <Property Name="FileId" Type="int" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_ManipulationLibrary">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ManipulationTypeId" Type="int" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="StandardTMU" Type="float" Nullable="false" />
+    <Property Name="UserTMU" Type="float" Nullable="false" />
+    <Property Name="EquipmentTypeId" Type="int" />
+    <Property Name="StopPrecisionId" Type="int" />
+    <Property Name="ApplyPressureId" Type="int" />
+    <Property Name="NatureCutsId" Type="int" />
+    <Property Name="Distance" Type="float" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_ManipulationTypeLibrary">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="500" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="ParentId" Type="int" Nullable="false" />
+    <Property Name="IsUseMachine" Type="bit" Nullable="false" />
+    <Property Name="Node" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_NatureCutsLibrary">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Percent" Type="float" Nullable="false" />
+    <Property Name="Factor" Type="float" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+  </EntityType>
+  <EntityType Name="T_Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerId" Type="int" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="500" />
+    <Property Name="Name" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Img" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CompanyId" Type="int" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_PhaseGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="MaxLevel" Type="float" Nullable="false" />
+    <Property Name="MinLevel" Type="float" Nullable="false" />
+    <Property Name="WorkshopIds" Type="varchar" MaxLength="250" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_StopPrecisionLibrary">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StopPrecision" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="MTM_2" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="TMUNumber" Type="float" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_TechProcessVersion">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="ParentId" Type="int" Nullable="false" />
+    <Property Name="TimeCompletePerCommo" Type="float" Nullable="false" />
+    <Property Name="NumberOfWorkers" Type="int" Nullable="false" />
+    <Property Name="WorkingTimePerDay" Type="float" Nullable="false" />
+    <Property Name="PacedProduction" Type="float" Nullable="false" />
+    <Property Name="ProOfGroupPerHour" Type="float" Nullable="false" />
+    <Property Name="ProOfGroupPerDay" Type="float" Nullable="false" />
+    <Property Name="ProOfPersonPerDay" Type="float" Nullable="false" />
+    <Property Name="PricePerSecond" Type="float" Nullable="false" />
+    <Property Name="Allowance" Type="float" Nullable="false" />
+    <Property Name="Note" Type="nvarchar(max)" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_TechProcessVersionDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TechProcessVersionId" Type="int" Nullable="false" />
+    <Property Name="CA_PhaseId" Type="int" Nullable="false" />
+    <Property Name="StandardTMU" Type="float" Nullable="false" />
+    <Property Name="Percent" Type="float" Nullable="false" />
+    <Property Name="TimeByPercent" Type="float" Nullable="false" />
+    <Property Name="Worker" Type="float" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_TimePrepare">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="250" />
+    <Property Name="TMUNumber" Type="float" Nullable="false" />
+    <Property Name="TimeTypePrepareId" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_TimeTypePrepare">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsPublic" Type="bit" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_WorkShop">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="250" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedUser" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedUser" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <Association Name="FK__SCompany__Parent__3B75D760">
+    <End Role="SCompany" Type="Self.SCompany" Multiplicity="0..1" />
+    <End Role="SCompany1" Type="Self.SCompany" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SCompany">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SCompany1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SFeature__Module__3D5E1FD2">
+    <End Role="SModule" Type="Self.SModule" Multiplicity="1" />
+    <End Role="SFeature" Type="Self.SFeature" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SModule">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SFeature">
+        <PropertyRef Name="ModuleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SMenu__MenuCateg__03F0984C">
+    <End Role="SCategory" Type="Self.SCategory" Multiplicity="1" />
+    <End Role="SMenu" Type="Self.SMenu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SCategory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SMenu">
+        <PropertyRef Name="MenuCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SPermissi__Featu__3C69FB99">
+    <End Role="SFeature" Type="Self.SFeature" Multiplicity="1" />
+    <End Role="SPermission" Type="Self.SPermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SFeature">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SPermission">
+        <PropertyRef Name="FeatureId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SRolePerm__Featu__403A8C7D">
+    <End Role="SFeature" Type="Self.SFeature" Multiplicity="1" />
+    <End Role="SRolePermission" Type="Self.SRolePermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SFeature">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SRolePermission">
+        <PropertyRef Name="FeatureId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SRolePerm__Modul__3F466844">
+    <End Role="SModule" Type="Self.SModule" Multiplicity="1" />
+    <End Role="SRolePermission" Type="Self.SRolePermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SModule">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SRolePermission">
+        <PropertyRef Name="ModuleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SRolePerm__Pemis__412EB0B6">
+    <End Role="SPermission" Type="Self.SPermission" Multiplicity="1" />
+    <End Role="SRolePermission" Type="Self.SRolePermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SPermission">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SRolePermission">
+        <PropertyRef Name="PermissionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SRolePerm__RoleI__3E52440B">
+    <End Role="SRoLe" Type="Self.SRoLe" Multiplicity="1" />
+    <End Role="SRolePermission" Type="Self.SRolePermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SRoLe">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SRolePermission">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SUser__CompanyId__3A81B327">
+    <End Role="SCompany" Type="Self.SCompany" Multiplicity="1" />
+    <End Role="SUser" Type="Self.SUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SCompany">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SUser">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SMenu_SModule">
+    <End Role="SModule" Type="Self.SModule" Multiplicity="1" />
+    <End Role="SMenu" Type="Self.SMenu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SModule">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SMenu">
+        <PropertyRef Name="ModuleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SMenuCategory_SModule">
+    <End Role="SModule" Type="Self.SModule" Multiplicity="1" />
+    <End Role="SCategory" Type="Self.SCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SModule">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SCategory">
+        <PropertyRef Name="ModuleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SRoLe_SCompany">
+    <End Role="SCompany" Type="Self.SCompany" Multiplicity="1" />
+    <End Role="SRoLe" Type="Self.SRoLe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SCompany">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SRoLe">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUserRole_SRoLe">
+    <End Role="SRoLe" Type="Self.SRoLe" Multiplicity="1" />
+    <End Role="SUserRole" Type="Self.SUserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SRoLe">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SUserRole">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUserRole_SUser">
+    <End Role="SUser" Type="Self.SUser" Multiplicity="1" />
+    <End Role="SUserRole" Type="Self.SUserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SUserRole">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_CA_Phase_ManiVer_De_T_CA_Phase">
+    <End Role="T_CA_Phase" Type="Self.T_CA_Phase" Multiplicity="1" />
+    <End Role="T_CA_Phase_Mani" Type="Self.T_CA_Phase_Mani" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_CA_Phase">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_CA_Phase_Mani">
+        <PropertyRef Name="CA_PhaseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_CA_Phase_ManiVer_De_T_ManipulationLibrary">
+    <End Role="T_ManipulationLibrary" Type="Self.T_ManipulationLibrary" Multiplicity="0..1" />
+    <End Role="T_CA_Phase_Mani" Type="Self.T_CA_Phase_Mani" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_ManipulationLibrary">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_CA_Phase_Mani">
+        <PropertyRef Name="ManipulationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_CA_Phase_SWorkerLevel">
+    <End Role="SWorkerLevel" Type="Self.SWorkerLevel" Multiplicity="1" />
+    <End Role="T_CA_Phase" Type="Self.T_CA_Phase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SWorkerLevel">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_CA_Phase">
+        <PropertyRef Name="WorkerLevelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_CA_Phase_T_CommodityAnalysis">
+    <End Role="T_CommodityAnalysis" Type="Self.T_CommodityAnalysis" Multiplicity="1" />
+    <End Role="T_CA_Phase" Type="Self.T_CA_Phase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_CommodityAnalysis">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_CA_Phase">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_CA_Phase_T_Equipment">
+    <End Role="T_Equipment" Type="Self.T_Equipment" Multiplicity="0..1" />
+    <End Role="T_CA_Phase" Type="Self.T_CA_Phase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Equipment">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_CA_Phase">
+        <PropertyRef Name="EquipmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_CA_Phase_T_PhaseGroup">
+    <End Role="T_PhaseGroup" Type="Self.T_PhaseGroup" Multiplicity="1" />
+    <End Role="T_CA_Phase" Type="Self.T_CA_Phase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_PhaseGroup">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_CA_Phase">
+        <PropertyRef Name="PhaseGroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_CA_Phase_TimePrepare_T_CA_Phase">
+    <End Role="T_CA_Phase" Type="Self.T_CA_Phase" Multiplicity="1" />
+    <End Role="T_CA_Phase_TimePrepare" Type="Self.T_CA_Phase_TimePrepare" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_CA_Phase">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_CA_Phase_TimePrepare">
+        <PropertyRef Name="Commo_Ana_PhaseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_CA_Phase_TimePrepare_T_TimePrepare">
+    <End Role="T_TimePrepare" Type="Self.T_TimePrepare" Multiplicity="1" />
+    <End Role="T_CA_Phase_TimePrepare" Type="Self.T_CA_Phase_TimePrepare" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_TimePrepare">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_CA_Phase_TimePrepare">
+        <PropertyRef Name="TimePrepareId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_Equipment_T_EquipmentGroup">
+    <End Role="T_EquipmentGroup" Type="Self.T_EquipmentGroup" Multiplicity="1" />
+    <End Role="T_Equipment" Type="Self.T_Equipment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_EquipmentGroup">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Equipment">
+        <PropertyRef Name="EquipmentGroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_Equipment_T_EquipmentType">
+    <End Role="T_EquipmentType" Type="Self.T_EquipmentType" Multiplicity="1" />
+    <End Role="T_Equipment" Type="Self.T_Equipment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_EquipmentType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Equipment">
+        <PropertyRef Name="EquipmentTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_EquipmentAttribute_T_Equipment">
+    <End Role="T_Equipment" Type="Self.T_Equipment" Multiplicity="1" />
+    <End Role="T_EquipmentAttribute" Type="Self.T_EquipmentAttribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Equipment">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_EquipmentAttribute">
+        <PropertyRef Name="EquipmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_EquipmentAttribute_T_EquipmentType">
+    <End Role="T_EquipmentType" Type="Self.T_EquipmentType" Multiplicity="1" />
+    <End Role="T_EquipmentAttribute" Type="Self.T_EquipmentAttribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_EquipmentType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_EquipmentAttribute">
+        <PropertyRef Name="EquipmentTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_EquipmentType_T_EquipType_Default">
+    <End Role="T_EquipType_Default" Type="Self.T_EquipType_Default" Multiplicity="0..1" />
+    <End Role="T_EquipmentType" Type="Self.T_EquipmentType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_EquipType_Default">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_EquipmentType">
+        <PropertyRef Name="EquipTypeDefaultId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_EquipmentTypeAttribute_T_EquipmentType">
+    <End Role="T_EquipmentType" Type="Self.T_EquipmentType" Multiplicity="1" />
+    <End Role="T_EquipmentTypeAttribute" Type="Self.T_EquipmentTypeAttribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_EquipmentType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_EquipmentTypeAttribute">
+        <PropertyRef Name="EquipmentTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_EquipmentTypeAttribute_T_EquipTypeAttr_Default">
+    <End Role="T_EquipTypeAttr_Default" Type="Self.T_EquipTypeAttr_Default" Multiplicity="0..1" />
+    <End Role="T_EquipmentTypeAttribute" Type="Self.T_EquipmentTypeAttribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_EquipTypeAttr_Default">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_EquipmentTypeAttribute">
+        <PropertyRef Name="EquipTypeAtrrDefault_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_EquipTypeAttr_Default_T_EquipType_Default">
+    <End Role="T_EquipType_Default" Type="Self.T_EquipType_Default" Multiplicity="1" />
+    <End Role="T_EquipTypeAttr_Default" Type="Self.T_EquipTypeAttr_Default" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_EquipType_Default">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_EquipTypeAttr_Default">
+        <PropertyRef Name="EquipType_DefaultId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_LabourDivision_SUser">
+    <End Role="SUser" Type="Self.SUser" Multiplicity="1" />
+    <End Role="T_LabourDivision" Type="Self.T_LabourDivision" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_LabourDivision">
+        <PropertyRef Name="CreatedUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_LabourDivision_SUser1">
+    <End Role="SUser" Type="Self.SUser" Multiplicity="0..1" />
+    <End Role="T_LabourDivision" Type="Self.T_LabourDivision" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_LabourDivision">
+        <PropertyRef Name="UpdatedUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_LabourDivision_T_CommoAna">
+    <End Role="T_CommodityAnalysis" Type="Self.T_CommodityAnalysis" Multiplicity="1" />
+    <End Role="T_LabourDivision" Type="Self.T_LabourDivision" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_CommodityAnalysis">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_LabourDivision">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_LabourDivision_T_Line">
+    <End Role="T_Line" Type="Self.T_Line" Multiplicity="1" />
+    <End Role="T_LabourDivision" Type="Self.T_LabourDivision" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Line">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_LabourDivision">
+        <PropertyRef Name="LineId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_LabourDivision_T_TechProcessVersion">
+    <End Role="T_TechProcessVersion" Type="Self.T_TechProcessVersion" Multiplicity="1" />
+    <End Role="T_LabourDivision" Type="Self.T_LabourDivision" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_TechProcessVersion">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_LabourDivision">
+        <PropertyRef Name="TechProVer_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_Line_T_WorkShop">
+    <End Role="T_WorkShop" Type="Self.T_WorkShop" Multiplicity="1" />
+    <End Role="T_Line" Type="Self.T_Line" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_WorkShop">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Line">
+        <PropertyRef Name="WorkShopId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_LinePosition_HR_Employee">
+    <End Role="HR_Employee" Type="Self.HR_Employee" Multiplicity="0..1" />
+    <End Role="T_LinePosition" Type="Self.T_LinePosition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Employee">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_LinePosition">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_LinePosition_T_LabourDivision">
+    <End Role="T_LabourDivision" Type="Self.T_LabourDivision" Multiplicity="1" />
+    <End Role="T_LinePosition" Type="Self.T_LinePosition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_LabourDivision">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_LinePosition">
+        <PropertyRef Name="LabourDivisionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_LinePositionDetail_T_LinePosition">
+    <End Role="T_LinePosition" Type="Self.T_LinePosition" Multiplicity="1" />
+    <End Role="T_LinePositionDetail" Type="Self.T_LinePositionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_LinePosition">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_LinePositionDetail">
+        <PropertyRef Name="Line_PositionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_LinePositionDetail_T_TechProcessVersionDetail">
+    <End Role="T_TechProcessVersionDetail" Type="Self.T_TechProcessVersionDetail" Multiplicity="1" />
+    <End Role="T_LinePositionDetail" Type="Self.T_LinePositionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_TechProcessVersionDetail">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_LinePositionDetail">
+        <PropertyRef Name="TechProVerDe_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_ManipulationEquipment_T_Equipment">
+    <End Role="T_Equipment" Type="Self.T_Equipment" Multiplicity="1" />
+    <End Role="T_ManipulationEquipment" Type="Self.T_ManipulationEquipment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Equipment">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_ManipulationEquipment">
+        <PropertyRef Name="EquipmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_ManipulationEquipment_T_ManipulationLibrary">
+    <End Role="T_ManipulationLibrary" Type="Self.T_ManipulationLibrary" Multiplicity="1" />
+    <End Role="T_ManipulationEquipment" Type="Self.T_ManipulationEquipment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_ManipulationLibrary">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_ManipulationEquipment">
+        <PropertyRef Name="ManipulationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_ManipulationFile_T_File">
+    <End Role="T_File" Type="Self.T_File" Multiplicity="1" />
+    <End Role="T_ManipulationFile" Type="Self.T_ManipulationFile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_File">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_ManipulationFile">
+        <PropertyRef Name="FileId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_ManipulationFile_T_ManipulationLibrary">
+    <End Role="T_ManipulationLibrary" Type="Self.T_ManipulationLibrary" Multiplicity="1" />
+    <End Role="T_ManipulationFile" Type="Self.T_ManipulationFile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_ManipulationLibrary">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_ManipulationFile">
+        <PropertyRef Name="ManipulationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_ManipulationLibrary_T_ApplyPressureLibrary">
+    <End Role="T_ApplyPressureLibrary" Type="Self.T_ApplyPressureLibrary" Multiplicity="0..1" />
+    <End Role="T_ManipulationLibrary" Type="Self.T_ManipulationLibrary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_ApplyPressureLibrary">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_ManipulationLibrary">
+        <PropertyRef Name="ApplyPressureId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_ManipulationLibrary_T_EquipmentType">
+    <End Role="T_EquipmentType" Type="Self.T_EquipmentType" Multiplicity="0..1" />
+    <End Role="T_ManipulationLibrary" Type="Self.T_ManipulationLibrary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_EquipmentType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_ManipulationLibrary">
+        <PropertyRef Name="EquipmentTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_ManipulationLibrary_T_EquipmentType1">
+    <End Role="T_EquipmentType" Type="Self.T_EquipmentType" Multiplicity="0..1" />
+    <End Role="T_ManipulationLibrary" Type="Self.T_ManipulationLibrary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_EquipmentType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_ManipulationLibrary">
+        <PropertyRef Name="EquipmentTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_ManipulationLibrary_T_ManipulationTypeLibrary">
+    <End Role="T_ManipulationTypeLibrary" Type="Self.T_ManipulationTypeLibrary" Multiplicity="1" />
+    <End Role="T_ManipulationLibrary" Type="Self.T_ManipulationLibrary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_ManipulationTypeLibrary">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_ManipulationLibrary">
+        <PropertyRef Name="ManipulationTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_ManipulationLibrary_T_ManipulationTypeLibrary1">
+    <End Role="T_ManipulationTypeLibrary" Type="Self.T_ManipulationTypeLibrary" Multiplicity="1" />
+    <End Role="T_ManipulationLibrary" Type="Self.T_ManipulationLibrary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_ManipulationTypeLibrary">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_ManipulationLibrary">
+        <PropertyRef Name="ManipulationTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_ManipulationLibrary_T_NatureCutsLibrary">
+    <End Role="T_NatureCutsLibrary" Type="Self.T_NatureCutsLibrary" Multiplicity="0..1" />
+    <End Role="T_ManipulationLibrary" Type="Self.T_ManipulationLibrary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_NatureCutsLibrary">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_ManipulationLibrary">
+        <PropertyRef Name="NatureCutsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_ManipulationLibrary_T_StopPrecisionLibrary">
+    <End Role="T_StopPrecisionLibrary" Type="Self.T_StopPrecisionLibrary" Multiplicity="0..1" />
+    <End Role="T_ManipulationLibrary" Type="Self.T_ManipulationLibrary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_StopPrecisionLibrary">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_ManipulationLibrary">
+        <PropertyRef Name="StopPrecisionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_Product_T_Customer">
+    <End Role="T_Customer" Type="Self.T_Customer" Multiplicity="1" />
+    <End Role="T_Product" Type="Self.T_Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Product">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_TechProcessVersion_T_Product">
+    <End Role="T_Product" Type="Self.T_Product" Multiplicity="1" />
+    <End Role="T_TechProcessVersion" Type="Self.T_TechProcessVersion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_TechProcessVersion">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_TechProcessVersionDetail_T_CA_Phase">
+    <End Role="T_CA_Phase" Type="Self.T_CA_Phase" Multiplicity="1" />
+    <End Role="T_TechProcessVersionDetail" Type="Self.T_TechProcessVersionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_CA_Phase">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_TechProcessVersionDetail">
+        <PropertyRef Name="CA_PhaseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_TechProcessVersionDetail_T_TechProcessVersion">
+    <End Role="T_TechProcessVersion" Type="Self.T_TechProcessVersion" Multiplicity="1" />
+    <End Role="T_TechProcessVersionDetail" Type="Self.T_TechProcessVersionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_TechProcessVersion">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_TechProcessVersionDetail">
+        <PropertyRef Name="TechProcessVersionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_TimePrepare_T_TimeTypePrepare">
+    <End Role="T_TimeTypePrepare" Type="Self.T_TimeTypePrepare" Multiplicity="1" />
+    <End Role="T_TimePrepare" Type="Self.T_TimePrepare" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_TimeTypePrepare">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_TimePrepare">
+        <PropertyRef Name="TimeTypePrepareId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_1_SCompany">
+    <End Role="SCompany" Type="Self.SCompany" Multiplicity="1" />
+    <End Role="SCompanyModule" Type="Self.SCompanyModule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SCompany">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SCompanyModule">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="IEDModelStoreContainer">
+    <EntitySet Name="HR_Employee" EntityType="Self.HR_Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SCategory" EntityType="Self.SCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SCompany" EntityType="Self.SCompany" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SCompanyModule" EntityType="Self.SCompanyModule" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SConfig" EntityType="Self.SConfig" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SFeature" EntityType="Self.SFeature" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SLevelCompany" EntityType="Self.SLevelCompany" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SMenu" EntityType="Self.SMenu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SModule" EntityType="Self.SModule" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SPermission" EntityType="Self.SPermission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SRoLe" EntityType="Self.SRoLe" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SRolePermission" EntityType="Self.SRolePermission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SUser" EntityType="Self.SUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SUserRole" EntityType="Self.SUserRole" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SWorkerLevel" EntityType="Self.SWorkerLevel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_ApplyPressureLibrary" EntityType="Self.T_ApplyPressureLibrary" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_CA_Phase" EntityType="Self.T_CA_Phase" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_CA_Phase_Mani" EntityType="Self.T_CA_Phase_Mani" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_CA_Phase_TimePrepare" EntityType="Self.T_CA_Phase_TimePrepare" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_CommodityAnalysis" EntityType="Self.T_CommodityAnalysis" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_CompanySkill" EntityType="Self.T_CompanySkill" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_CompanySkillDetail" EntityType="Self.T_CompanySkillDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Customer" EntityType="Self.T_Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Employee_CompanySkill" EntityType="Self.T_Employee_CompanySkill" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Employee_PhaseGroupSkill" EntityType="Self.T_Employee_PhaseGroupSkill" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_EmployeePhase" EntityType="Self.T_EmployeePhase" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Equipment" EntityType="Self.T_Equipment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_EquipmentAttribute" EntityType="Self.T_EquipmentAttribute" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_EquipmentGroup" EntityType="Self.T_EquipmentGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_EquipmentType" EntityType="Self.T_EquipmentType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_EquipmentTypeAttribute" EntityType="Self.T_EquipmentTypeAttribute" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_EquipType_Default" EntityType="Self.T_EquipType_Default" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_EquipTypeAttr_Default" EntityType="Self.T_EquipTypeAttr_Default" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_File" EntityType="Self.T_File" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_IEDConfig" EntityType="Self.T_IEDConfig" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_LabourDivision" EntityType="Self.T_LabourDivision" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Line" EntityType="Self.T_Line" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_LinePosition" EntityType="Self.T_LinePosition" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_LinePositionDetail" EntityType="Self.T_LinePositionDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_ManipulationEquipment" EntityType="Self.T_ManipulationEquipment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_ManipulationFile" EntityType="Self.T_ManipulationFile" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_ManipulationLibrary" EntityType="Self.T_ManipulationLibrary" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_ManipulationTypeLibrary" EntityType="Self.T_ManipulationTypeLibrary" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_NatureCutsLibrary" EntityType="Self.T_NatureCutsLibrary" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Product" EntityType="Self.T_Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_PhaseGroup" EntityType="Self.T_PhaseGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_StopPrecisionLibrary" EntityType="Self.T_StopPrecisionLibrary" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_TechProcessVersion" EntityType="Self.T_TechProcessVersion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_TechProcessVersionDetail" EntityType="Self.T_TechProcessVersionDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_TimePrepare" EntityType="Self.T_TimePrepare" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_TimeTypePrepare" EntityType="Self.T_TimeTypePrepare" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_WorkShop" EntityType="Self.T_WorkShop" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__SCompany__Parent__3B75D760" Association="Self.FK__SCompany__Parent__3B75D760">
+      <End Role="SCompany" EntitySet="SCompany" />
+      <End Role="SCompany1" EntitySet="SCompany" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SFeature__Module__3D5E1FD2" Association="Self.FK__SFeature__Module__3D5E1FD2">
+      <End Role="SModule" EntitySet="SModule" />
+      <End Role="SFeature" EntitySet="SFeature" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SMenu__MenuCateg__03F0984C" Association="Self.FK__SMenu__MenuCateg__03F0984C">
+      <End Role="SCategory" EntitySet="SCategory" />
+      <End Role="SMenu" EntitySet="SMenu" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SPermissi__Featu__3C69FB99" Association="Self.FK__SPermissi__Featu__3C69FB99">
+      <End Role="SFeature" EntitySet="SFeature" />
+      <End Role="SPermission" EntitySet="SPermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SRolePerm__Featu__403A8C7D" Association="Self.FK__SRolePerm__Featu__403A8C7D">
+      <End Role="SFeature" EntitySet="SFeature" />
+      <End Role="SRolePermission" EntitySet="SRolePermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SRolePerm__Modul__3F466844" Association="Self.FK__SRolePerm__Modul__3F466844">
+      <End Role="SModule" EntitySet="SModule" />
+      <End Role="SRolePermission" EntitySet="SRolePermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SRolePerm__Pemis__412EB0B6" Association="Self.FK__SRolePerm__Pemis__412EB0B6">
+      <End Role="SPermission" EntitySet="SPermission" />
+      <End Role="SRolePermission" EntitySet="SRolePermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SRolePerm__RoleI__3E52440B" Association="Self.FK__SRolePerm__RoleI__3E52440B">
+      <End Role="SRoLe" EntitySet="SRoLe" />
+      <End Role="SRolePermission" EntitySet="SRolePermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SUser__CompanyId__3A81B327" Association="Self.FK__SUser__CompanyId__3A81B327">
+      <End Role="SCompany" EntitySet="SCompany" />
+      <End Role="SUser" EntitySet="SUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SMenu_SModule" Association="Self.FK_SMenu_SModule">
+      <End Role="SModule" EntitySet="SModule" />
+      <End Role="SMenu" EntitySet="SMenu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SMenuCategory_SModule" Association="Self.FK_SMenuCategory_SModule">
+      <End Role="SModule" EntitySet="SModule" />
+      <End Role="SCategory" EntitySet="SCategory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SRoLe_SCompany" Association="Self.FK_SRoLe_SCompany">
+      <End Role="SCompany" EntitySet="SCompany" />
+      <End Role="SRoLe" EntitySet="SRoLe" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUserRole_SRoLe" Association="Self.FK_SUserRole_SRoLe">
+      <End Role="SRoLe" EntitySet="SRoLe" />
+      <End Role="SUserRole" EntitySet="SUserRole" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUserRole_SUser" Association="Self.FK_SUserRole_SUser">
+      <End Role="SUser" EntitySet="SUser" />
+      <End Role="SUserRole" EntitySet="SUserRole" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_CA_Phase_ManiVer_De_T_CA_Phase" Association="Self.FK_T_CA_Phase_ManiVer_De_T_CA_Phase">
+      <End Role="T_CA_Phase" EntitySet="T_CA_Phase" />
+      <End Role="T_CA_Phase_Mani" EntitySet="T_CA_Phase_Mani" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_CA_Phase_ManiVer_De_T_ManipulationLibrary" Association="Self.FK_T_CA_Phase_ManiVer_De_T_ManipulationLibrary">
+      <End Role="T_ManipulationLibrary" EntitySet="T_ManipulationLibrary" />
+      <End Role="T_CA_Phase_Mani" EntitySet="T_CA_Phase_Mani" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_CA_Phase_SWorkerLevel" Association="Self.FK_T_CA_Phase_SWorkerLevel">
+      <End Role="SWorkerLevel" EntitySet="SWorkerLevel" />
+      <End Role="T_CA_Phase" EntitySet="T_CA_Phase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_CA_Phase_T_CommodityAnalysis" Association="Self.FK_T_CA_Phase_T_CommodityAnalysis">
+      <End Role="T_CommodityAnalysis" EntitySet="T_CommodityAnalysis" />
+      <End Role="T_CA_Phase" EntitySet="T_CA_Phase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_CA_Phase_T_Equipment" Association="Self.FK_T_CA_Phase_T_Equipment">
+      <End Role="T_Equipment" EntitySet="T_Equipment" />
+      <End Role="T_CA_Phase" EntitySet="T_CA_Phase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_CA_Phase_T_PhaseGroup" Association="Self.FK_T_CA_Phase_T_PhaseGroup">
+      <End Role="T_PhaseGroup" EntitySet="T_PhaseGroup" />
+      <End Role="T_CA_Phase" EntitySet="T_CA_Phase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_CA_Phase_TimePrepare_T_CA_Phase" Association="Self.FK_T_CA_Phase_TimePrepare_T_CA_Phase">
+      <End Role="T_CA_Phase" EntitySet="T_CA_Phase" />
+      <End Role="T_CA_Phase_TimePrepare" EntitySet="T_CA_Phase_TimePrepare" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_CA_Phase_TimePrepare_T_TimePrepare" Association="Self.FK_T_CA_Phase_TimePrepare_T_TimePrepare">
+      <End Role="T_TimePrepare" EntitySet="T_TimePrepare" />
+      <End Role="T_CA_Phase_TimePrepare" EntitySet="T_CA_Phase_TimePrepare" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_Equipment_T_EquipmentGroup" Association="Self.FK_T_Equipment_T_EquipmentGroup">
+      <End Role="T_EquipmentGroup" EntitySet="T_EquipmentGroup" />
+      <End Role="T_Equipment" EntitySet="T_Equipment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_Equipment_T_EquipmentType" Association="Self.FK_T_Equipment_T_EquipmentType">
+      <End Role="T_EquipmentType" EntitySet="T_EquipmentType" />
+      <End Role="T_Equipment" EntitySet="T_Equipment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_EquipmentAttribute_T_Equipment" Association="Self.FK_T_EquipmentAttribute_T_Equipment">
+      <End Role="T_Equipment" EntitySet="T_Equipment" />
+      <End Role="T_EquipmentAttribute" EntitySet="T_EquipmentAttribute" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_EquipmentAttribute_T_EquipmentType" Association="Self.FK_T_EquipmentAttribute_T_EquipmentType">
+      <End Role="T_EquipmentType" EntitySet="T_EquipmentType" />
+      <End Role="T_EquipmentAttribute" EntitySet="T_EquipmentAttribute" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_EquipmentType_T_EquipType_Default" Association="Self.FK_T_EquipmentType_T_EquipType_Default">
+      <End Role="T_EquipType_Default" EntitySet="T_EquipType_Default" />
+      <End Role="T_EquipmentType" EntitySet="T_EquipmentType" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_EquipmentTypeAttribute_T_EquipmentType" Association="Self.FK_T_EquipmentTypeAttribute_T_EquipmentType">
+      <End Role="T_EquipmentType" EntitySet="T_EquipmentType" />
+      <End Role="T_EquipmentTypeAttribute" EntitySet="T_EquipmentTypeAttribute" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_EquipmentTypeAttribute_T_EquipTypeAttr_Default" Association="Self.FK_T_EquipmentTypeAttribute_T_EquipTypeAttr_Default">
+      <End Role="T_EquipTypeAttr_Default" EntitySet="T_EquipTypeAttr_Default" />
+      <End Role="T_EquipmentTypeAttribute" EntitySet="T_EquipmentTypeAttribute" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_EquipTypeAttr_Default_T_EquipType_Default" Association="Self.FK_T_EquipTypeAttr_Default_T_EquipType_Default">
+      <End Role="T_EquipType_Default" EntitySet="T_EquipType_Default" />
+      <End Role="T_EquipTypeAttr_Default" EntitySet="T_EquipTypeAttr_Default" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_LabourDivision_SUser" Association="Self.FK_T_LabourDivision_SUser">
+      <End Role="SUser" EntitySet="SUser" />
+      <End Role="T_LabourDivision" EntitySet="T_LabourDivision" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_LabourDivision_SUser1" Association="Self.FK_T_LabourDivision_SUser1">
+      <End Role="SUser" EntitySet="SUser" />
+      <End Role="T_LabourDivision" EntitySet="T_LabourDivision" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_LabourDivision_T_CommoAna" Association="Self.FK_T_LabourDivision_T_CommoAna">
+      <End Role="T_CommodityAnalysis" EntitySet="T_CommodityAnalysis" />
+      <End Role="T_LabourDivision" EntitySet="T_LabourDivision" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_LabourDivision_T_Line" Association="Self.FK_T_LabourDivision_T_Line">
+      <End Role="T_Line" EntitySet="T_Line" />
+      <End Role="T_LabourDivision" EntitySet="T_LabourDivision" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_LabourDivision_T_TechProcessVersion" Association="Self.FK_T_LabourDivision_T_TechProcessVersion">
+      <End Role="T_TechProcessVersion" EntitySet="T_TechProcessVersion" />
+      <End Role="T_LabourDivision" EntitySet="T_LabourDivision" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_Line_T_WorkShop" Association="Self.FK_T_Line_T_WorkShop">
+      <End Role="T_WorkShop" EntitySet="T_WorkShop" />
+      <End Role="T_Line" EntitySet="T_Line" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_LinePosition_HR_Employee" Association="Self.FK_T_LinePosition_HR_Employee">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="T_LinePosition" EntitySet="T_LinePosition" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_LinePosition_T_LabourDivision" Association="Self.FK_T_LinePosition_T_LabourDivision">
+      <End Role="T_LabourDivision" EntitySet="T_LabourDivision" />
+      <End Role="T_LinePosition" EntitySet="T_LinePosition" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_LinePositionDetail_T_LinePosition" Association="Self.FK_T_LinePositionDetail_T_LinePosition">
+      <End Role="T_LinePosition" EntitySet="T_LinePosition" />
+      <End Role="T_LinePositionDetail" EntitySet="T_LinePositionDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_LinePositionDetail_T_TechProcessVersionDetail" Association="Self.FK_T_LinePositionDetail_T_TechProcessVersionDetail">
+      <End Role="T_TechProcessVersionDetail" EntitySet="T_TechProcessVersionDetail" />
+      <End Role="T_LinePositionDetail" EntitySet="T_LinePositionDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_ManipulationEquipment_T_Equipment" Association="Self.FK_T_ManipulationEquipment_T_Equipment">
+      <End Role="T_Equipment" EntitySet="T_Equipment" />
+      <End Role="T_ManipulationEquipment" EntitySet="T_ManipulationEquipment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_ManipulationEquipment_T_ManipulationLibrary" Association="Self.FK_T_ManipulationEquipment_T_ManipulationLibrary">
+      <End Role="T_ManipulationLibrary" EntitySet="T_ManipulationLibrary" />
+      <End Role="T_ManipulationEquipment" EntitySet="T_ManipulationEquipment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_ManipulationFile_T_File" Association="Self.FK_T_ManipulationFile_T_File">
+      <End Role="T_File" EntitySet="T_File" />
+      <End Role="T_ManipulationFile" EntitySet="T_ManipulationFile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_ManipulationFile_T_ManipulationLibrary" Association="Self.FK_T_ManipulationFile_T_ManipulationLibrary">
+      <End Role="T_ManipulationLibrary" EntitySet="T_ManipulationLibrary" />
+      <End Role="T_ManipulationFile" EntitySet="T_ManipulationFile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_ManipulationLibrary_T_ApplyPressureLibrary" Association="Self.FK_T_ManipulationLibrary_T_ApplyPressureLibrary">
+      <End Role="T_ApplyPressureLibrary" EntitySet="T_ApplyPressureLibrary" />
+      <End Role="T_ManipulationLibrary" EntitySet="T_ManipulationLibrary" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_ManipulationLibrary_T_EquipmentType" Association="Self.FK_T_ManipulationLibrary_T_EquipmentType">
+      <End Role="T_EquipmentType" EntitySet="T_EquipmentType" />
+      <End Role="T_ManipulationLibrary" EntitySet="T_ManipulationLibrary" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_ManipulationLibrary_T_EquipmentType1" Association="Self.FK_T_ManipulationLibrary_T_EquipmentType1">
+      <End Role="T_EquipmentType" EntitySet="T_EquipmentType" />
+      <End Role="T_ManipulationLibrary" EntitySet="T_ManipulationLibrary" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_ManipulationLibrary_T_ManipulationTypeLibrary" Association="Self.FK_T_ManipulationLibrary_T_ManipulationTypeLibrary">
+      <End Role="T_ManipulationTypeLibrary" EntitySet="T_ManipulationTypeLibrary" />
+      <End Role="T_ManipulationLibrary" EntitySet="T_ManipulationLibrary" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_ManipulationLibrary_T_ManipulationTypeLibrary1" Association="Self.FK_T_ManipulationLibrary_T_ManipulationTypeLibrary1">
+      <End Role="T_ManipulationTypeLibrary" EntitySet="T_ManipulationTypeLibrary" />
+      <End Role="T_ManipulationLibrary" EntitySet="T_ManipulationLibrary" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_ManipulationLibrary_T_NatureCutsLibrary" Association="Self.FK_T_ManipulationLibrary_T_NatureCutsLibrary">
+      <End Role="T_NatureCutsLibrary" EntitySet="T_NatureCutsLibrary" />
+      <End Role="T_ManipulationLibrary" EntitySet="T_ManipulationLibrary" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_ManipulationLibrary_T_StopPrecisionLibrary" Association="Self.FK_T_ManipulationLibrary_T_StopPrecisionLibrary">
+      <End Role="T_StopPrecisionLibrary" EntitySet="T_StopPrecisionLibrary" />
+      <End Role="T_ManipulationLibrary" EntitySet="T_ManipulationLibrary" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_Product_T_Customer" Association="Self.FK_T_Product_T_Customer">
+      <End Role="T_Customer" EntitySet="T_Customer" />
+      <End Role="T_Product" EntitySet="T_Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_TechProcessVersion_T_Product" Association="Self.FK_T_TechProcessVersion_T_Product">
+      <End Role="T_Product" EntitySet="T_Product" />
+      <End Role="T_TechProcessVersion" EntitySet="T_TechProcessVersion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_TechProcessVersionDetail_T_CA_Phase" Association="Self.FK_T_TechProcessVersionDetail_T_CA_Phase">
+      <End Role="T_CA_Phase" EntitySet="T_CA_Phase" />
+      <End Role="T_TechProcessVersionDetail" EntitySet="T_TechProcessVersionDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_TechProcessVersionDetail_T_TechProcessVersion" Association="Self.FK_T_TechProcessVersionDetail_T_TechProcessVersion">
+      <End Role="T_TechProcessVersion" EntitySet="T_TechProcessVersion" />
+      <End Role="T_TechProcessVersionDetail" EntitySet="T_TechProcessVersionDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_TimePrepare_T_TimeTypePrepare" Association="Self.FK_T_TimePrepare_T_TimeTypePrepare">
+      <End Role="T_TimeTypePrepare" EntitySet="T_TimeTypePrepare" />
+      <End Role="T_TimePrepare" EntitySet="T_TimePrepare" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_1_SCompany" Association="Self.FK_Table_1_SCompany">
+      <End Role="SCompany" EntitySet="SCompany" />
+      <End Role="SCompanyModule" EntitySet="SCompanyModule" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
